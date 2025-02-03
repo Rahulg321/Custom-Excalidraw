@@ -1,12 +1,33 @@
-import { prisma } from "@repo/database";
+import { Button } from '@repo/ui/components/ui/button'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@repo/ui/components/ui/card";
+import React from 'react'
 
-export default async function IndexPage() {
-  const users = await prisma.user.findMany();
-
+const page = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-      <pre>{JSON.stringify(users, null, 2)}</pre>
+    <div className="big-container">
+      <Button className="rounded-xl">Hello World</Button>
+      <Button>Hello World</Button>
+      <Card>
+        <CardHeader>
+          <CardTitle>Card Title</CardTitle>
+          <CardDescription>Card Description</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p>Card Content</p>
+        </CardContent>
+        <CardFooter>
+          <p>Card Footer</p>
+        </CardFooter>
+      </Card>
     </div>
   );
 }
+
+export default page
