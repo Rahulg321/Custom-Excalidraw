@@ -128,7 +128,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Users\\ACER\\Projects\\realtime\\packages\\database\\generated\\client",
+      "value": "C:\\Users\\ACER\\Projects\\realtime-excelidraw\\packages\\database\\generated\\client",
       "fromEnvVar": null
     },
     "config": {
@@ -142,7 +142,7 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "C:\\Users\\ACER\\Projects\\realtime\\packages\\database\\prisma\\schema.prisma",
+    "sourceFilePath": "C:\\Users\\ACER\\Projects\\realtime-excelidraw\\packages\\database\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
