@@ -1,6 +1,15 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@repo/ui/globals.css";
+import localFont from "next/font/local";
+
+// Font files can be colocated inside of `app`
+const excaliFont = localFont({
+  src: "../fonts/Excalifont-Regular.woff2",
+  display: "swap",
+  variable: "--font-excali",
+});
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${excaliFont.variable} antialiased`}
       >
         {children}
       </body>

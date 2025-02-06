@@ -12,20 +12,11 @@ import React from 'react'
 const page = () => {
   return (
     <div className="big-container">
-      <Button className="rounded-xl">Hello World</Button>
-      <Button>Hello World</Button>
-      <Card>
-        <CardHeader>
-          <CardTitle>Card Title</CardTitle>
-          <CardDescription>Card Description</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p>Card Content</p>
-        </CardContent>
-        <CardFooter>
-          <p>Card Footer</p>
-        </CardFooter>
-      </Card>
+      <div>
+        <p className='excali'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus praesentium aliquam iste! Temporibus, facere maxime eum, consectetur amet voluptatum enim qui, aliquid harum mollitia quae. Corporis laudantium unde cum aliquam.
+        </p>
+      </div>
     </div>
   );
 }
